@@ -145,4 +145,40 @@ class ComplexNumberTest {
         assertEquals(0, result.getReal());
         assertEquals(0, result.getImaginary());
     }
+
+    @Test
+    void testNonStaticAdd() {
+        ComplexNumber complex1 = new ComplexNumber(3, 2);
+        ComplexNumber complex2 = new ComplexNumber(1, 7);
+        ComplexNumber result = complex1.add(complex2);
+        assertEquals(4, result.getReal());
+        assertEquals(9, result.getImaginary());
+    }
+
+    @Test
+    void testNonStaticAddZero() {
+        ComplexNumber complex1 = new ComplexNumber(3, 2);
+        ComplexNumber complex2 = new ComplexNumber(0, 0);
+        ComplexNumber result = complex1.add(complex2);
+        assertEquals(3, result.getReal());
+        assertEquals(2, result.getImaginary());
+    }
+
+    @Test
+    void testNonStaticMultiply() {
+        ComplexNumber complex1 = new ComplexNumber(3, 2);
+        ComplexNumber complex2 = new ComplexNumber(1, 7);
+        ComplexNumber result = complex1.multiply(complex2);
+        assertEquals(-11, result.getReal());
+        assertEquals(23, result.getImaginary());
+    }
+
+    @Test
+    void testNonStaticMultiplyByZero() {
+        ComplexNumber complex1 = new ComplexNumber(3, 2);
+        ComplexNumber complex2 = new ComplexNumber(0, 0);
+        ComplexNumber result = complex1.multiply(complex2);
+        assertEquals(0, result.getReal());
+        assertEquals(0, result.getImaginary());
+    }
 }
