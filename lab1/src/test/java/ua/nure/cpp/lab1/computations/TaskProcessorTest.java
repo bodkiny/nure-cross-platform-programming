@@ -6,6 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import ua.nure.cpp.lab1.computations.readers.ConsoleArrayReader;
+import ua.nure.cpp.lab1.computations.sorters.InsertionSorter;
+import ua.nure.cpp.lab1.computations.sorters.Sorter;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

@@ -4,6 +4,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
+import ua.nure.cpp.lab1.computations.readers.ArrayReader;
+import ua.nure.cpp.lab1.computations.sorters.Sorter;
 
 @Builder
 public class TaskProcessor {

@@ -1,4 +1,4 @@
-package ua.nure.cpp.lab1.computations;
+package ua.nure.cpp.lab1.computations.sorters;
 
 public class InsertionSorter implements Sorter {
     @Override

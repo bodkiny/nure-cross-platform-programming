@@ -1,4 +1,4 @@
-package ua.nure.cpp.lab1.computations;
+package ua.nure.cpp.lab1.computations.readers;
 
 import java.io.InputStream;
 import java.util.Scanner;
