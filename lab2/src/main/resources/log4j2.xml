@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{[%p] %d{HH:mm:ss.SSS} [%t] %c{1}: %msg%n}"
+                           disableAnsi="false"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="ua.nure.cpp.lab2.free_checkout" level="info" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+    </Loggers>
+</Configuration>
