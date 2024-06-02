@@ -25,7 +25,7 @@ public class ApplicationRunner {
 
         addCashDesksToTheRestaurant(restaurant);
         restaurant.initialize();
-        restaurant.startRestaurant();
+        restaurant.openRestaurant();
         Thread.sleep(APPROXIMATE_SIMULATION_TIME);
         while (!restaurant.isEmpty()) {
             Thread.sleep(2000);

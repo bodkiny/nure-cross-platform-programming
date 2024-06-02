@@ -21,7 +21,7 @@ public class FastFoodRestaurant {
     @Getter
     private boolean isClosed = false;
 
-    public void startRestaurant() {
+    public void openRestaurant() {
         executorService = Executors.newFixedThreadPool(cashDesks.size());
         cashDesks.forEach(executorService::execute);
         LOGGER.info("Restaurant has started serving!");
