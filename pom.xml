@@ -24,7 +24,6 @@
         <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
         <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
         <lombok.version>1.18.30</lombok.version>
-        <javafx-controls.version>21.0.3</javafx-controls.version>
     </properties>
 
     <dependencyManagement>
@@ -70,18 +69,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>${javafx-controls.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>${javafx-controls.version}</version>
         </dependency>
     </dependencies>
 
