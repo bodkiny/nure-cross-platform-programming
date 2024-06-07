@@ -1,6 +1,8 @@
 name: Build an executable fat JAR file for the lab3 module
 
 on:
+  push:
+    branches: [ dev, main ]
   workflow_dispatch:
 
 jobs:
